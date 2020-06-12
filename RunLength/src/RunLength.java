@@ -3,7 +3,7 @@ public class RunLength {
 		int n = str.length();
 		for (int i = 0; i < n; i++) {
 
-			int count = 2;
+			int count = 1;
 			while (i < n - 1 && str.charAt(i) == str.charAt(i + 1)) {
 				count++;
 				i++;
@@ -15,7 +15,7 @@ public class RunLength {
 	}
 
 	public static void main(String[] args) {
-		String str = "sdfsfcvxwer";
+		String str = "ssdfsfccccvxwer";
 		printRLE(str);
 	}
 }
